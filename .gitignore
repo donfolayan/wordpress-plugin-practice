@@ -1,0 +1,23 @@
+/wp-admin/
+/wp-includes/
+/wp-content/uploads/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDEs and OS
+.vscode/
+.idea/
+*.log
+
+# Composer
+/vendor/
+
+# Node
+/node_modules/
+
+# Ignore wp-config
+../../../wp-config.php
+
+index.php

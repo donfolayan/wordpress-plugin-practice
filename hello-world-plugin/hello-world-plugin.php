@@ -6,7 +6,7 @@
  * Author: Donald Folayan
  * Version: 1.0
  * Author URI: https://www.github.com/donfolayan
- * Plugin URI: https://www.github.com/donfolayan/wp_plugin_practice
+ * Plugin URI: https://www.github.com/donfolayan/wp_plugin_practice/hello-world-plugin
  */
 
 // Admin notices

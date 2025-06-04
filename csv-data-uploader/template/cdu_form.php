@@ -1,4 +1,5 @@
 <h3>Form Data</h3>
+<p id='show_upload_message'></p>
 <form action="javascript:void(0)" id="frm-csv" method="get" enctype="multipart/form-data">
     <p>
         <label for="csv_data_file">Upload CSV File</label><br>

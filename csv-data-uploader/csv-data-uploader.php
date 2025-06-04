@@ -56,7 +56,7 @@ function cdu_create_table(){
 
  function cdu_enqueue_scripts(){
     // C:\xampp\htdocs\wp\wp_plugin_practice\wp-content\plugins\csv-data-uploader\assets\js\scripts.js
-    wp_enqueue_script('cdu-script', plugin_dir_url(__FILE__) . '/assets/js/scripts.js', array('jquery'));
+    wp_enqueue_script('cdu-script', plugin_dir_url(__FILE__) . 'assets/js/scripts.js', array('jquery'));
     wp_localize_script('cdu-script', 'cdu_ajax_obj', array(
         'ajax_url' => admin_url('admin-ajax.php')
         ));
@@ -116,10 +116,13 @@ function cdu_handle_csv_upload(){
             }
             
             fclose($handle);
+
             echo json_encode(array(
                 'status' => 1,
                 'message' => 'CSV data uploaded successfully.'
             ));
+
+        wp_die();
         }
 
     } else{
